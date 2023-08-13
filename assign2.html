@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="">
+        <label for="num1">Enter Number:</label>
+        <input type="number" id="num1" value=""><br>
+        <label for="num2">Enter Number:</label>
+        <input type="number" id="num2" value=""><br>
+
+    </form>
+    <button onclick="operation('multiply')" id="num1">Multiply</button>
+    <button onclick="operation('divide')" id="num2">Divide</button>
+     <p>the result is: <span id="printResult"></span></p>
+    <script>
+        function operation(type){
+            let num1=document.getElementById("num1").value;
+            let num2=document.getElementById("num2").value;
+            let result=document.getElementById("printResult");
+            if ((num1 != null) && (num2 != null)){
+                   
+                   let v;
+                   if (type=="multiply" ){
+                     v=num1*num2;
+                   }
+                   else if(type=="divide"){
+                       v=num1/num2;
+                   }
+                   
+                   result.innerHTML=v;
+                   console.warn("The result is:");
+                   console.log(v);
+                                    
+            } 
+        }
+    </script>
+</body>
+</html>

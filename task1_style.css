@@ -2,9 +2,10 @@ body{
     background-image: url('nature.jpg');
 }
 h1{
-    background-color: blanchedalmond;
+    /* background-color: blanchedalmond; */
     text-align: center;
     width: 40%;
     color: blue;
+    background-color: #ccc;
 
 }
